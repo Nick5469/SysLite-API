@@ -1,0 +1,27 @@
+{
+    "name":"SysLite - Plugins Index",
+    "version": "1.0.1.50330",
+    "DownloadMirrors":{
+        "github": "https://github.com",
+        "ghproxy": "https://mirror.ghproxy.com/https://github.com",
+        "moeyy": "https://github.moeyy.xyz/https://github.com"
+    },
+    "plugins": [
+        {
+            "DownloadUrl": "{root}/Nick5469/SysLite-ComponentDatabase/releases/download/6.0.1.50328/syslite.component.slp",
+            "DownloadSHA256": "",
+            "Icon": "{root}/Nick5469/SysLite-ComponentDatabase/icon.png",
+            "Manifest": {
+                "id": "syslite.component",
+                "name": "SysLite 组件库",
+                "description": "",
+                "autohr": "Nick",
+                "version": "1.0.1.50330",
+                "APIVersion": 1,
+                "Readme": "{root}/Nick5469/SysLite-ComponentDatabase/README.MD",
+                "url": "https://github.com/Nick5469/SysLite-ComponentDatabase/"
+            },
+            "IsActive": false
+        }
+    ]
+}
