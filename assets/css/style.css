@@ -54,6 +54,10 @@ html {
  * Remove the margin in all browsers.
  */
 body {
+  user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
   margin: 0;
 }
 
