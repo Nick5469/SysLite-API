@@ -5,12 +5,14 @@
     {
       "name": "Windows 正式版",
       "version": "4.0",
-      "date": "2025/04/06"
+      "date": "2025/04/06"，
+      "download": "https://github.com/Nick5469/SysLite-API/Download/Realese/"
     },
     {
       "name": "Windows 预览版",
       "version": "4.0.1.50406",
-      "date": "2025/04/06"
+      "date": "2025/04/06",
+      "download": "https://github.com/Nick5469/SysLite-API/Download/Preview/.dev_SysLite.exe"
     }
   ]
 }
