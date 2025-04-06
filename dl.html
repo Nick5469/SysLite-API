@@ -22,20 +22,8 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Custom Font -->
-    <style>
-        @font-face {
-            font-family: 'CustomFont';
-            src: url('assets/fonts/custom-font.woff2') format('woff2');
-        }
-
-        body {
-            font-family: 'CustomFont', sans-serif;
-        }
-    </style>
-
     <!-- site title -->
-    <title>SysLite Toolkits</title>
+    <title>SysLite - 下载中心</title>
 </head>
 
 <body>
@@ -49,8 +37,6 @@
         </div>
     </div>
     <!-- preloader ending here -->
-
-
 
     <!-- ===============// header section start here \\================= -->
     <header class="header">
@@ -74,11 +60,11 @@
                 <div class="header__menu ms-auto">
                     <ul class="header__nav mb-0">
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="index.html" role="button" aria-expanded="true"
+                            <a class="header__nav-link" href="index.html" role="button" aria-expanded="false"
                                 data-bs-offset="0,10">首页</a>
                         </li>
                         <li class="header__nav-item">
-                            <a class="header__nav-link" href="dl.html" role="button" aria-expanded="false"
+                            <a class="header__nav-link" href="dl.html" role="button" aria-expanded="true"
                                 data-bs-offset="0,10">下载</a>
                         </li>
                         <li class="header__nav-item">
@@ -132,31 +118,85 @@
     <!-- ===============//header section end here \\================= -->
 
 
-    <!-- ===============//banner section start here \\================= -->
-    <section class="banner-section" style="background-image: url(assets/images/banner/bg-1.jpg);">
+
+    <!-- ==========Page Header Section Start Here========== -->
+    <section class="page-header-section style-1">
         <div class="container">
-            <div class="banner-wrapper">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6">
-                        <div class="banner-content">
-                            <h1><span class="theme-color" data-blast="color">SysLite</span> Toolkits <br>
-                                一款 <span class="theme-color" data-blast="color">系统定制</span> 工具</h1>
-                            <p>用于编辑 Windows 映像的集成工具包</p>
-                            <div class="banner-btns d-flex flex-wrap">
-                                <a data-blast="bgColor" href="dl.html" class="default-btn move-top"><span>下载</span> </a>
-                                <a href="coming-soon.html" class="default-btn move-right"><span>文档</span> </a>
-
-                            </div>
-                        </div>
+            <div class="page-header-content">
+                <div class="page-header-inner">
+                    <div class="page-title">
+                        <h2>下载中心</h2>
                     </div>
-
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">首页</a></li>
+                        <li class="active">下载</li>
+                    </ol>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ===============//banner section end here \\================= -->
+    <!-- ==========Page Header Section Ends Here========== -->
 
 
+    <!-- ==========wallet Section start Here========== -->
+    <section class="wallet-section padding-top padding-bottom">
+        <div class="container">
+            <div class="wallet-inner">
+                <div class="wallet-title">
+                    <h3 class="mb-3">选择版本</h3>
+                    <p>请选择适合您操作系统的版本 <a href="signup.html">如何选择</a></p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="wallet-item">
+                            <div class="wallet-item-inner">
+                                <div class="wallet-thumb">
+                                    <a href="signin.html">
+                                        <img src="assets/images/wallet/01.png" alt="wallet-img">
+                                    </a>
+                                </div>
+                                <div class="wallet-content">
+                                    <h5><a id="test01" href="signin.html">Windows 正式版</a></h5>
+                                    <p>v 4.0.0 | 32位 | 2025/04/05</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="wallet-item">
+                            <div class="wallet-item-inner">
+                                <div class="wallet-thumb">
+                                    <a href="signin.html">
+                                        <img src="assets/images/wallet/02.png" alt="wallet-img">
+                                    </a>
+                                </div>
+                                <div class="wallet-content">
+                                    <h5><a href="signin.html">Windows 预览版</a></h5>
+                                    <p>v 4.0.1.50406 | 32位 | 2025/04/06</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="wallet-item">
+                            <div class="wallet-item-inner">
+                                <div class="wallet-thumb">
+                                    <a href="signin.html">
+                                        <img src="assets/images/wallet/03.png" alt="wallet-img">
+                                    </a>
+                                </div>
+                                <div class="wallet-content">
+                                    <h5><a href="signin.html">Android</a></h5>
+                                    <p>筹划中...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========wallet Section ends Here========== -->
 
 
 
@@ -273,6 +313,39 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/functions.js"></script>
+
+    <script>
+        // 等待DOM完全加载
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取a标签元素
+            const nameLink = document.getElementById('test01');
+            
+            // 发起fetch请求获取JSON数据
+            fetch('/Download/index.json')
+                .then(response => {
+                    // 检查响应是否成功
+                    if (!response.ok) {
+                        throw new Error('网络响应不正常');
+                    }
+                    return response.json(); // 解析JSON数据
+                })
+                .then(data => {
+                    // 检查数据中是否有data.name
+                    if (data && data.data && data.data[0].name) {
+                        // 更新a标签的文本内容
+                        nameLink.textContent = data.data[0].name;
+                        nameLink.classList.remove('loading');
+                    } else {
+                        throw new Error('JSON数据格式不符合预期');
+                    }
+                })
+                .catch(error => {
+                    console.error('获取数据时出错:', error);
+                    nameLink.textContent = '加载失败';
+                    nameLink.classList.add('loading');
+                });
+        });
+    </script>
 </body>
 
 </html>
