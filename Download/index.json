@@ -3,10 +3,14 @@
   "version": "2.0.1.50406",
   "data":[
     {
-      "name": "Windows 正式版"
+      "name": "Windows 正式版",
+      "version": "4.0",
+      "date": "2025/04/06"
     },
     {
-      "name": "Windows 预览版"
+      "name": "Windows 预览版",
+      "version": "4.0.1.50406",
+      "date": "2025/04/06"
     }
   ]
 }
