@@ -1,0 +1,12 @@
+{
+  "name": "SysLite Download Sevices",
+  "version": "2.0.1.50406",
+  "data":[
+    {
+      "name": "Windows 正式版"
+    },
+    {
+      "name": "Windows 预览版"
+    }
+  ]
+}
