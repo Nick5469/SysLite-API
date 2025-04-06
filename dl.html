@@ -338,9 +338,11 @@
                 .then(data => {
                     // 更新a标签的文本内容
                     rel_dl.href = data.data[0].download;
+                    rel_name.href = data.data[0].download;
                     rel_name.textContent = data.data[0].name;
                     rel_ver.textContent = "v " + data.data[0].version + " | " + data.data[0].date;
                     pre_dl.href = data.data[1].download;
+                    pre_name.href = data.data[1].download;
                     pre_name.textContent = data.data[1].name;
                     pre_ver.textContent = "v " + data.data[1].version + " | " + data.data[1].date;
 
