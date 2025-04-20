@@ -3,16 +3,16 @@
   "version": "2.0.1.50406",
   "data":[
     {
-      "name": "Windows 正式版",
+      "name": "SysLite 2025",
       "version": "4.0",
-      "date": "2025/04/06",
-      "download": "https://nick5469.github.io/SysLite-API/Download/Realese/SysLite.exe"
+      "date": "2025/04/20",
+      "download": "https://111pan.cn/f/OepIw/.dev_SysLite.exe"
     },
     {
-      "name": "Windows 预览版",
-      "version": "4.0.1.50406",
-      "date": "2025/04/06",
-      "download": "https://nick5469.github.io/SysLite-API/Download/preview/.dev_SysLite.exe"
+      "name": "SysLite Preview",
+      "version": "4.0.1.50420",
+      "date": "2025/04/20",
+      "download": "https://111pan.cn/f/OepIw/.dev_SysLite.exe"
     }
   ]
 }
