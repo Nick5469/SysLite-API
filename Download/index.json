@@ -1,18 +1,18 @@
 {
-  "name": "SysLite Download Sevices",
-  "version": "2.0.1.50406",
-  "data":[
-    {
-      "name": "SysLite 2025",
-      "version": "4.0",
-      "date": "2025/04/20",
-      "download": "https://111pan.cn/f/OepIw/.dev_SysLite.exe"
-    },
-    {
-      "name": "SysLite Preview",
-      "version": "4.0.1.50420",
-      "date": "2025/04/20",
-      "download": "https://111pan.cn/f/OepIw/.dev_SysLite.exe"
+    "name": "SysLite Download Sevices",
+    "version": "2.0.1.50406",
+    "data": {
+        "rel": {
+            "name": "SysLite 2025",
+            "version": "4.0",
+            "date": "2025/04/20",
+            "download": "https://111pan.cn/f/OepIw/.dev_SysLite.exe"
+        },
+        "pre": {
+            "name": "SysLite Preview",
+            "version": "4.0.1.50420",
+            "date": "2025/04/20",
+            "download": "https://111pan.cn/f/OepIw/.dev_SysLite.exe"
+        }
     }
-  ]
 }
