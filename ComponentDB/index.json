@@ -1,0 +1,18 @@
+{
+    "name":"SysLite ComponentDB Proxy",
+    "version":"0.1.50719",
+    "data":{
+        "rel":{
+            "name":"SysLite ComponentDB 2025",
+            "version":"6.0.50707",
+            "date":"2025-07-07",
+            "download":"https://111pan.cn/f/MXli7/component.json"
+        },
+        "pre":{
+            "name":"SysLite ComponentDB Preview",
+            "version":"6.0.50707",
+            "date":"2025-07-07",
+            "download":"https://111pan.cn/f/MXli7/component.json"
+        }
+    }
+}
